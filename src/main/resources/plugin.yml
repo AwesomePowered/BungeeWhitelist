@@ -1,0 +1,4 @@
+name: BungeeWhitelist
+author: LaxWasHere
+version: ${project.version}
+main: net.lazlecraft.bungeewhitelist.BungeeWhitelist
