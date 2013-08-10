@@ -17,7 +17,7 @@ public class BungeeWhitelist extends ConfigurablePlugin implements Listener {
 	}
 	
 	public void registerFeature() {
-		if (!ProxyServer.getInstance().getConfigurationAdapter().getBoolean("online_mode",true)) {
+		if (ProxyServer.getInstance().getConfigurationAdapter().getBoolean("online_mode",true)) {
 			ProxyServer.getInstance().getPluginManager().registerListener(this, this);
 			this.getConfig().options().copyDefaults(true);
 			this.saveConfig();
