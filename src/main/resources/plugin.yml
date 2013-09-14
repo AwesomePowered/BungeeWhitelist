@@ -1,5 +1,5 @@
 name: BhiteList
-authors: [codename_B, LaxWasHere]
+author: codename_B
 version: 2.0
 depends: [BungeeYAML]
 main: net.lazlecraft.bungeewhitelist.BungeeWhitelist
