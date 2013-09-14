@@ -1,5 +1,5 @@
-name: BungeeWhitelist
-author: LaxWasHere
-version: ${project.version}
+name: BhiteList
+authors: [codename_B, LaxWasHere]
+version: 2.0
 depends: [BungeeYAML]
 main: net.lazlecraft.bungeewhitelist.BungeeWhitelist

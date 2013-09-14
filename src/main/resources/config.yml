@@ -1,7 +1,9 @@
+## If the whitelist is enabled
+Enabled: true
 ## Message that shows when a player cannot join.
 KickMessage: '&4&lYou are not whitelisted!'
 ## The list of whitelisted people.
 Whitelist:
 - LaxWasHere
-- LaxWasThere
+- codename_B
 - md_5
