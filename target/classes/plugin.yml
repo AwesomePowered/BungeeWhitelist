@@ -1,5 +1,0 @@
-name: BungeeWhitelist
-author: LaxWasHere
-version: 1.0-${BUILD_NUMBER}
-depends: [BungeeYAML]
-main: net.lazlecraft.bungeewhitelist.BungeeWhitelist
