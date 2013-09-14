@@ -27,6 +27,8 @@ public class BhiteList extends Command {
                 whitelist.getConfig().set("Enabled", false);
                 whitelist.saveConfig();
                 commandSender.sendMessage(BungeeWhitelist.PREFIX+"Disabled");
+            } else {
+                error(commandSender);
             }
         } else if(strings.length == 2) {
             // add/remove
@@ -39,6 +41,7 @@ public class BhiteList extends Command {
                     players.add(toAdd);
                     whitelist.getConfig().set("Whitelist", players);
                     whitelist.saveConfig();
+                    commandSender.sendMessage(BungeeWhitelist.PREFIX+toAdd+" is now bhitelisted");
                 }
             } else if(strings[0].equalsIgnoreCase("remove")) {
                 String toRemove = strings[1];
@@ -47,10 +50,15 @@ public class BhiteList extends Command {
                     removeIgnoreCase(players, toRemove);
                     whitelist.getConfig().set("Whitelist", players);
                     whitelist.saveConfig();
+                    commandSender.sendMessage(BungeeWhitelist.PREFIX+toRemove+" is no longer bhitelisted");
                 } else {
                     commandSender.sendMessage(BungeeWhitelist.PREFIX+toRemove+" is not bhitelisted");
                 }
+            } else {
+                error(commandSender);
             }
+        } else {
+            error(commandSender);
         }
     }
 
