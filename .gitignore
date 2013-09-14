@@ -18,6 +18,12 @@ local.properties
 .idea/
 .idea/*
 *.iml
+target/
+target/*
+target/classes/
+target/classes/*
+out/
+out/*
 
 # External tool builders
 .externalToolBuilders/
